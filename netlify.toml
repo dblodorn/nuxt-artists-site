@@ -1,0 +1,18 @@
+[build]
+  command = "yarn generate"
+  publish = "dist"
+
+[context.dev]
+  command = "yarn preview"
+  publish = "dist"
+
+[context.stage]
+  command = "yarn preview"
+  publish = "dist"
+
+
+[[plugins]]
+package = "@netlify/plugin-sitemap"
+
+  [plugins.inputs]
+  buildDir = "dist"

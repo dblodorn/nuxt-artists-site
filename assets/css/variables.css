@@ -1,0 +1,61 @@
+/* DEFAULTS */
+:root { 
+  --base-unit: 1.5rem;
+  --pad-single: var(--base-unit);
+  --pad-double: calc(var(--pad-single) * 2);
+  --pad-big: calc(var(--pad-single) * 4);
+  --pad-micro: calc(var(--pad-single)  / 2);
+  --max-width-small: calc(var(--base-unit) * 30);
+  --max-width-medium: calc(var(--base-unit) * 40);
+  --max-width-large: calc(var(--base-unit) * 50);
+  --max-width-xl: calc(var(--base-unit) * 70);
+  --header-height: calc(var(--base-unit) * 4);
+  --footer-height: calc(var(--base-unit) * 4);
+}
+
+/* TYPOGRAPHY */
+:root { 
+  --micro-size: calc(var(--base-unit) / 1.25);
+  --sm-size: var(--base-unit);
+  --reg-size: calc(var(--base-unit) * 1.125);
+  --md-size: calc(var(--base-unit) * 1.5);
+  --big-size: calc(var(--base-unit) * 1.85);
+  --xl-size: calc(var(--base-unit) * 2.5);
+  --h1: var(--big-size);
+  --h2: var(--big-size);
+  --h3: var(--big-size);
+  --h4: var(--md-size);
+  --h5: var(--md-size);
+  --h6: var(--sm-size);
+  --micro: var(--sm-size);
+  --p_sm: var(--sm-size);
+  --p_med: var(--reg-size);
+  --p_lg: var(--big-size);
+  --font-a: 'basis', sans-serif;
+  --font-b: 'Space Mono', sans-serif;
+  --font-weight-a: 600;
+  --font-weight-b: 400;
+  --font-style-a: regular;
+  --font-style-b: regular;
+}
+
+
+@media (--md) {
+  :root {
+    --base-unit: 1.75rem;
+  }
+}
+
+@media (--lg) {
+  :root {
+    --base-unit: 2rem;
+    --micro-size: calc(var(--base-unit) / 2);
+    --sm-size: var(--base-unit);
+    --reg-size: calc(var(--base-unit) * 1.25);
+    --md-size: calc(var(--base-unit) * 1.75);
+    --big-size: calc(var(--base-unit) * 2.125);
+    --xl-size: calc(var(--base-unit) * 3.5);
+    --header-height: calc(var(--base-unit) * 4);
+    --footer-height: calc(var(--base-unit) * 2);
+  }
+}
